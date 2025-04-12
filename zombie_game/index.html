@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zombies</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="zombie.js" defer></script>
+  </head>
+  <body>
+    <div id="game_window">
+      <img id="board_bg" src="images/board-bg.jpg" draggable="false" />
+      <div id="life_points">
+        <img
+          class="life_point"
+          id="life_1"
+          src="images/full_heart.png"
+          draggable="false"
+        />
+        <img
+          class="life_point"
+          id="life_2"
+          src="images/full_heart.png"
+          draggable="false"
+        />
+        <img
+          class="life_point"
+          id="life_3"
+          src="images/full_heart.png"
+          draggable="false"
+        />
+      </div>
+
+      <p id="score">000</p>
+    </div>
+    <audio id="sad_soundtrack">
+      <source src="images/sad-music.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="action_soundtrack" autoplay loop>
+      <source src="images/action_music.wav" type="audio/wav" />
+    </audio>
+    <audio id="shot">
+      <source src="images/rifle_shot.wav" type="audio/wav" />
+    </audio>
+    <audio id="zombie_sound">
+      <source src="images/zombie_sound.mp3" type="audio/mpeg" />
+    </audio>
+  </body>
+</html>
